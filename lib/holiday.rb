@@ -55,8 +55,8 @@ end
 def all_winter_holiday_supplies(holiday_hash)
   #binding.pry
   arr1 = holiday_hash[:winter][:christmas]
-  arr 1 << holiday_hash[:winter][:new_years]
-  
+  arr1 << holiday_hash[:winter][:new_years]
+  arr1
   # return an array of all of the supplies that are used in the winter season
 
 end
