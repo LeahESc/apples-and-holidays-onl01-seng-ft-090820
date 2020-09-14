@@ -72,7 +72,7 @@ def all_supplies_in_holidays(holiday_hash)
       supply_array.join(" , ")
     binding.pry
       puts "#{season.capitalize}:"
-      puts "  #{holiday_words.to_s.capitalize}: #{supply_array.join(", ")}"
+      puts "#{holiday_words.to_s.capitalize}: #{supply_array.join(", ")}"
     end
   end
   end
