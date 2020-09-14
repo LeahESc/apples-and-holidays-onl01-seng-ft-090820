@@ -93,7 +93,6 @@ def all_holidays_with_bbq(holiday_hash)
         elsif supply_array == []
           supply_array.join(" , ")
           return holiday
-        end
       end
     end
   end
