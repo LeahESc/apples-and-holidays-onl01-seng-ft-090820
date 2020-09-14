@@ -66,7 +66,7 @@ def all_supplies_in_holidays(holiday_hash)
     holidays_and_supplies.each do |holiday_words, supply_array|
       #binding.pry
     if holiday_words.include?("_")
-      holiday_words.join("_")
+      holiday_words.join("_").capitalize
     else holiday_words.to_s.capitalize
       supply_array.join(" , ")
     #binding.pry
