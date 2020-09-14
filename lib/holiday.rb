@@ -72,8 +72,8 @@ def all_supplies_in_holidays(holiday_hash)
         supply_array.join(" , ")
          puts "  #{holiday_words.to_s.capitalize}: #{supply_array.join(", ")}"
       end
+    binding.pry
     end
-  binding.pry
   end
 end  
   # iterate through holiday_hash and print items such that your readout resembles:
