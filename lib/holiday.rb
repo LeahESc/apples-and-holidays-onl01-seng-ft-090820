@@ -89,16 +89,18 @@ end
 
 
 def all_holidays_with_bbq(holiday_hash)
+  array = []
   holiday_hash.each do |season, hol_hashes|
     hol_hashes.each do |holiday, supply_array|
       if supply_array.include?("BBQ")
-        return holiday
-        elsif supply_array.length > 1
-          supply_array.join(" , ")
-          return holiday
+        array << holiday
+        # elsif supply_array.length > 1
+        #   supply_array.join(" , ")
+        #   return holiday
       end
     end
   end
+  array
 end
 
 
