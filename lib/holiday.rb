@@ -69,7 +69,7 @@ def all_supplies_in_holidays(holiday_hash)
       #binding.pry
       if holiday_words.to_s.include?("_")
         var = holiday_words.to_s.split("_").collect {|word| word.capitalize}.join(" ")
-       puts " #{var}: #{supply_array.join(", ")}"
+       puts "  #{var}: #{supply_array.join(", ")}"
       else 
         # holiday_words.to_s.capitalize
       #   supply_array.join(" , ")
